@@ -27,23 +27,49 @@
 
   <div class="container">
     <header>
-      <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
+      <div class="wrapper">
+        <div class="menu-btn">
+          <span class="menu-btn__burger"></span>
+        </div>
+
+        <nav class="nav">
+          <ul class="menu-nav">
+            <li class="menu-nav__item">
+              <a href="#" class="menu-nav__link">Portfolio</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="#" class="menu-nav__link">About</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="#" class="menu-nav__link">Contact</a>
+            </li>
+          </ul>
+          </nav>
       </div>
 
-      <nav class="nav">
-        <ul class="menu-nav">
-          <li class="menu-nav__item">
-            <a href="#" class="menu-nav__link">Portfolio</a>
-          </li>
-          <li class="menu-nav__item">
-            <a href="#" class="menu-nav__link">About</a>
-          </li>
-          <li class="menu-nav__item">
-            <a href="#" class="menu-nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <section class="home" id="home">
+        <div class="wrapper">
+          <div class="home-info">
+            <h1>
+              <span>Sadie Jay</span>
+              <br>
+              <span>Front-End</span>
+              <br>
+              <span>Web Developer</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+      <!-- add fa down caret icon -->
+      <span aria-hidden="true" class="fa icon" tabindex="0">show more</span>
+
+      <!-- in js add fa sun and moon image inside theme-toggle__icons span -->
+      <div class="theme-toggle">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle">
+          <span class="theme-toggle__icons"></span>
+        </label>
+      </div>
     </header>
 
   </div>
