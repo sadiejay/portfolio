@@ -2,7 +2,21 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+$primary-font: 'Montserrat', sans-serif;
+$accent-font: 'Aclonica', sans-serif;
 
+h1,
+button,
+nav {
+  font-family:$accent-font;
+}
+
+h2,
+h3,
+h4,
+p {
+  font-family: $primary-font;
+}
 @import "./helperclass";
 @import "./mediaqueries";
 @import "./printstyles";
