@@ -83,8 +83,8 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 h1,
 button,
 nav {
@@ -96,6 +96,36 @@ h3,
 h4,
 p {
   font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  outline: lawngreen 7px solid;
+}
+
+.container * {
+  width: 100%;
+  height: auto;
+}
+
+.container,
+.menu-nav,
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-nav {
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.home.wrapper {
+  justify-content: flex-start;
 }
 
 /* ==========================================================================

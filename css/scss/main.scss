@@ -1,22 +1,73 @@
 @import "./resets";
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-$primary-font: 'Montserrat', sans-serif;
-$accent-font: 'Aclonica', sans-serif;
+Author's custom styles
+========================================================================== */
 
-h1,
-button,
-nav {
-  font-family:$accent-font;
-}
+// Global Styles
+  $primary-font: 'Montserrat', sans-serif;
+  $accent-font: 'Aclonica', sans-serif;
 
-h2,
-h3,
-h4,
-p {
-  font-family: $primary-font;
-}
+  h1,
+  button,
+  nav {
+    font-family:$accent-font;
+  }
+
+  h2,
+  h3,
+  h4,
+  p {
+    font-family: $primary-font;
+  }
+
+
+  // basic layout
+  @mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+  @mixin listSetting {
+    text-decoration: none;
+    list-style-type: none;
+    color:inherit;
+  }
+
+  .container {
+    width: 95%;
+    margin: auto;
+    outline: lawngreen 7px solid;
+    // ! change to animated (?) gradient
+  }
+
+  //! universal selector inbound!
+  .container * {
+    width: 100%;
+    height: auto;
+  }
+
+  .container,
+  .menu-nav,
+  .wrapper {
+    @include flexCenter();
+  }
+
+  .menu-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .home.wrapper {
+    justify-content: flex-start;
+  }
+
+
+
+
+// rest of imports
 @import "./helperclass";
 @import "./mediaqueries";
 @import "./printstyles";
