@@ -116,7 +116,10 @@ ul li {
 
 .container,
 .menu-nav,
-.wrapper {
+.wrapper,
+.projects-list,
+.project-list__item,
+.project-list__name {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,6 +140,26 @@ header .home.wrapper {
   justify-content: flex-start;
 }
 
+.projects-list .react img {
+  aspect-ratio: 622/401;
+  width: 100%;
+}
+
+.projects-list .unplugged img {
+  aspect-ratio: 319/181;
+  width: 100%;
+}
+
+.projects-list .base-apparel img {
+  aspect-ratio: 128/69;
+  width: 100%;
+}
+
+.projects-list .halloween img {
+  aspect-ratio: 512/289;
+  width: 100%;
+}
+
 .skills-list {
   display: flex;
   flex-flow: row wrap;
@@ -146,12 +169,17 @@ header .home.wrapper {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 .skills-list li i {
   font-size: 3rem;
 }
 
+@media only screen and (min-width: 530px) {
+  .skills-list li {
+    flex-basis: 25%;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

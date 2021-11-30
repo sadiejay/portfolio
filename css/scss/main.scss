@@ -54,7 +54,10 @@ Author's custom styles
 
   .container,
   .menu-nav,
-  .wrapper {
+  .wrapper,
+  .projects-list,
+  .project-list__item,
+  .project-list__name {
     @include flexCenter();
   }
 
@@ -74,6 +77,23 @@ Author's custom styles
     }
 } //  header
 
+// project
+.projects-list .react img {
+  aspect-ratio: 622/401;
+  width: 100%;
+}
+.projects-list .unplugged img {
+  aspect-ratio: 319/181;
+  width: 100%;
+}
+.projects-list .base-apparel img {
+  aspect-ratio: 128/69;
+  width: 100%;
+}
+.projects-list .halloween img {
+  aspect-ratio: 512/289;
+  width: 100%;
+}
 
 // skills
 .skills-list {
@@ -85,11 +105,17 @@ flex: 1;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 25%;
+    flex-basis: 50%;
 
     i {
       font-size: 3rem;
     }
+  }
+}
+
+@media only screen and (min-width: 530px) {
+  .skills-list li {
+    flex-basis: 25%;
   }
 }
 
