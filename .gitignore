@@ -7,3 +7,4 @@ dist
 doc/*
 *.md
 .DS_Store
+.vscode/
