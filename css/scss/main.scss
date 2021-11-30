@@ -21,6 +21,11 @@ Author's custom styles
   }
 
 
+  ul li {
+    list-style-type: none;
+    padding: 1em;
+  }
+
   // basic layout
   @mixin flexCenter {
     display: flex;
@@ -36,16 +41,15 @@ Author's custom styles
   }
 
   .container {
-    width: 95%;
+    width: 100%;
     margin: auto;
-    outline: lawngreen 7px solid;
+    border: lawngreen 7px solid;
     // ! change to animated (?) gradient
   }
 
   //! universal selector inbound!
-  .container * {
+  .container > * {
     width: 100%;
-    height: auto;
   }
 
   .container,
@@ -54,18 +58,40 @@ Author's custom styles
     @include flexCenter();
   }
 
-  .menu-nav {
+  .wrapper {
+    width:min(95%, 1180px);
+    margin: auto;
+  }
+
+  header {
+    .menu-nav {
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
   }
+    .home.wrapper {
+      justify-content: flex-start;
+    }
+} //  header
 
-  .home.wrapper {
-    justify-content: flex-start;
+
+// skills
+.skills-list {
+display: flex;
+flex-flow: row wrap;
+flex: 1;
+
+  li {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+
+    i {
+      font-size: 3rem;
+    }
   }
-
-
-
+}
 
 // rest of imports
 @import "./helperclass";

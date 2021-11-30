@@ -13,6 +13,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *, *:before, *:after {
@@ -98,15 +99,19 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-.container {
-  width: 95%;
-  margin: auto;
-  outline: lawngreen 7px solid;
+ul li {
+  list-style-type: none;
+  padding: 1em;
 }
 
-.container * {
+.container {
   width: 100%;
-  height: auto;
+  margin: auto;
+  border: lawngreen 7px solid;
+}
+
+.container > * {
+  width: 100%;
 }
 
 .container,
@@ -118,14 +123,33 @@ p {
   align-items: center;
 }
 
-.menu-nav {
+.wrapper {
+  width: min(95%, 1180px);
+  margin: auto;
+}
+
+header .menu-nav {
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
 }
-
-.home.wrapper {
+header .home.wrapper {
   justify-content: flex-start;
+}
+
+.skills-list {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+}
+.skills-list li {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 25%;
+}
+.skills-list li i {
+  font-size: 3rem;
 }
 
 /* ==========================================================================
