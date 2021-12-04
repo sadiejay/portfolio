@@ -109,6 +109,9 @@ ul li {
   margin: auto;
   border: lawngreen 7px solid;
 }
+.container * {
+  text-align: center;
+}
 
 .container > * {
   width: 100%;
@@ -140,24 +143,69 @@ header .home.wrapper {
   justify-content: flex-start;
 }
 
+.project-list__item {
+  margin: 3em 2em;
+}
+
+.project-list__item-info {
+  margin: 2em 0em;
+  width: 100%;
+  flex-basis: 50%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-list__item-info > * {
+  margin: 1.5em 0em;
+}
+
+.projects-list .react img,
+.projects-list .unplugged img,
+.projects-list .base-apparel img,
+.projects-list .halloween img {
+  width: 100%;
+}
+
 .projects-list .react img {
   aspect-ratio: 622/401;
-  width: 100%;
 }
 
 .projects-list .unplugged img {
   aspect-ratio: 319/181;
-  width: 100%;
 }
 
 .projects-list .base-apparel img {
   aspect-ratio: 128/69;
-  width: 100%;
 }
 
 .projects-list .halloween img {
   aspect-ratio: 512/289;
-  width: 100%;
+}
+
+.project-list__item-skills-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.project-list__item-skills-icons * i {
+  font-size: 3rem;
+}
+
+.project-list__item-links a {
+  display: inline-block;
+  padding: 25px;
+  margin: 10px;
+  outline: 1px solid olive;
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+}
+
+.project-list__item-links a:hover {
+  color: peru;
+  outline: dashed 1px black;
 }
 
 .skills-list {
@@ -176,8 +224,36 @@ header .home.wrapper {
 }
 
 @media only screen and (min-width: 530px) {
+  .project-list__item-desc {
+    max-width: 30ch;
+    text-align: left;
+  }
+
   .skills-list li {
     flex-basis: 25%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  article.project-list__item:nth-child(1) > div:nth-child(1),
+article.project-list__item:nth-child(3) > div:nth-child(1) {
+    flex-direction: row;
+  }
+
+  article.project-list__item:nth-child(2) > div:nth-child(1),
+article.project-list__item:nth-child(4) > div:nth-child(1) {
+    flex-direction: row-reverse;
+  }
+
+  .projects-list .react img,
+.projects-list .unplugged img,
+.projects-list .base-apparel img,
+.projects-list .halloween img {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .project-list__item.react {
+    margin-top: 0;
   }
 }
 /* ==========================================================================
