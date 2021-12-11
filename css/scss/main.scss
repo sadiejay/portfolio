@@ -76,10 +76,39 @@ Author's custom styles
     justify-content: flex-end;
     width: 100%;
   }
+    .home {
+      min-height: 90vh;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      width: 100%;
+    }
     .home.wrapper {
       justify-content: flex-start;
     }
-} //  header
+  }
+
+  .theme-toggle {
+    border: none;
+    // outline: none;
+    // outline needs a value
+    padding: 20px;
+    // border-radius: 50%;
+    cursor: pointer;
+    background: inherit;
+  }
+  .theme-toggle i{
+      font-size: 1.5rem;
+  }
+
+  .home-info h1 {
+    text-align: left;
+  }
+
+  header i {
+    // margin-bottom: 25px;
+  }
+  //  header
 
 // project
 .project-list__item {
@@ -162,6 +191,14 @@ flex: 1;
 }
 
 @media only screen and (min-width: 530px) {
+  // header
+  header nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   // projects
   .project-list__item-desc {
     max-width: 30ch;
@@ -175,6 +212,11 @@ flex: 1;
 }
 
 @media only screen and (min-width: 760px) {
+  // header
+  .nav {
+    min-height: 10vh;
+    align-self: flex-end;
+  }
   // projects
   article.project-list__item:nth-child(1) > div:nth-child(1),
   article.project-list__item:nth-child(3) > div:nth-child(1){
