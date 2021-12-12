@@ -104,8 +104,13 @@ ul li {
   padding: 1em;
 }
 
+body {
+  height: 100%;
+}
+
 .container {
   width: 100%;
+  min-height: 100%;
   margin: auto;
   border: lawngreen 7px solid;
 }
@@ -118,6 +123,7 @@ ul li {
 }
 
 .container,
+nav,
 .menu-nav,
 .wrapper,
 .projects-list,
@@ -134,10 +140,20 @@ ul li {
   margin: auto;
 }
 
+header .menu-btn {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  background: transparent;
+  color: #000;
+  display: none;
+}
+header .menu-btn:focus, header .menu-btn:hover {
+  background: #fff;
+  color: #000;
+}
 header .menu-nav {
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 100%;
+  flex-direction: column;
 }
 header .home {
   min-height: 90vh;
@@ -148,6 +164,18 @@ header .home {
 }
 header .home.wrapper {
   justify-content: flex-start;
+}
+
+header .menu-nav {
+  display: none;
+}
+
+header .menu-btn {
+  display: block;
+}
+
+header .menu-nav.is-active {
+  display: block;
 }
 
 .theme-toggle {
@@ -266,6 +294,17 @@ header .home.wrapper {
   .nav {
     min-height: 10vh;
     align-self: flex-end;
+  }
+
+  header .menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  header #toggle {
+    display: none;
   }
 
   article.project-list__item:nth-child(1) > div:nth-child(1),

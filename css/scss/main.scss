@@ -40,8 +40,13 @@ Author's custom styles
     color:inherit;
   }
 
+  body {
+    height: 100%;
+  }
+
   .container {
     width: 100%;
+    min-height: 100%;
     margin: auto;
     border: lawngreen 7px solid;
     // ! change to animated (?) gradient
@@ -57,6 +62,7 @@ Author's custom styles
   }
 
   .container,
+  nav,
   .menu-nav,
   .wrapper,
   .projects-list,
@@ -71,11 +77,28 @@ Author's custom styles
   }
 
   header {
+    .menu-btn {
+      // position: absolute;
+      // right: 1em;
+      // top: 0.8em;
+      // padding: 8px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      font-size: 1em;
+      background: transparent;
+      color: #000;
+      display: none;
+
+      &:focus,
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+
     .menu-nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-  }
+      flex-direction: column;
+    }
     .home {
       min-height: 90vh;
       display: flex;
@@ -86,6 +109,19 @@ Author's custom styles
     .home.wrapper {
       justify-content: flex-start;
     }
+
+  }
+
+  header .menu-nav {
+    display: none;
+  }
+
+  header .menu-btn {
+    display: block;
+  }
+
+  header .menu-nav.is-active {
+    display: block;
   }
 
   .theme-toggle {
@@ -217,6 +253,19 @@ flex: 1;
     min-height: 10vh;
     align-self: flex-end;
   }
+
+  header .menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  header #toggle {
+    display: none;
+  }
+
+
   // projects
   article.project-list__item:nth-child(1) > div:nth-child(1),
   article.project-list__item:nth-child(3) > div:nth-child(1){
