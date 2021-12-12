@@ -278,13 +278,6 @@ i.devicon-sketch-line {
 }
 
 @media only screen and (min-width: 530px) {
-  header nav {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-  }
-
   .project-list__item-desc {
     max-width: 30ch;
     text-align: left;
