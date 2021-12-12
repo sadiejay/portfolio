@@ -193,6 +193,10 @@ header .menu-nav.is-active {
   text-align: left;
 }
 
+i.devicon-sketch-line {
+  font-weight: bolder;
+}
+
 .project-list__item {
   margin: 3em 2em;
 }
