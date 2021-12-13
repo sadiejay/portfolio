@@ -67,7 +67,8 @@ Author's custom styles
   .wrapper,
   .projects-list,
   .project-list__item,
-  .project-list__name {
+  .project-list__name,
+  .about-info {
     @include flexCenter();
   }
 
@@ -213,6 +214,9 @@ i.devicon-sketch-line {
 }
 
 // skills
+.skills {
+  // margin: 3em 2em;
+}
 .skills-list {
 display: flex;
 flex-flow: row wrap;
@@ -228,6 +232,28 @@ flex: 1;
       font-size: 3rem;
     }
   }
+}
+
+// about
+.about {
+  margin: 3em 2em;
+}
+.about-info {
+  width: fit-content;
+}
+
+.about figure {
+  max-width: 300px;
+}
+
+.about img {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.about p {
+  margin: 25px 0;
+  text-align: left;
 }
 
 @media only screen and (min-width: 530px) {
@@ -288,6 +314,24 @@ flex: 1;
     margin-top: 0;
   }
 
+  // about
+  .about-info {
+    flex-direction: row
+  }
+  .about figure {
+    flex-basis: 33%;
+    align-self: flex-start;
+    margin: 0 2em;
+  }
+
+  .about-info__text {
+    flex-basis: 66%;
+    max-width: 60ch;
+    margin: 0 2em;
+    p:first-child {
+      margin-top: 0;
+    }
+  }
 
 }
 

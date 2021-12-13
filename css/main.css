@@ -128,7 +128,8 @@ nav,
 .wrapper,
 .projects-list,
 .project-list__item,
-.project-list__name {
+.project-list__name,
+.about-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -277,6 +278,30 @@ i.devicon-sketch-line {
   font-size: 3rem;
 }
 
+.about {
+  margin: 3em 2em;
+}
+
+.about-info {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.about figure {
+  max-width: 300px;
+}
+
+.about img {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.about p {
+  margin: 25px 0;
+  text-align: left;
+}
+
 @media only screen and (min-width: 530px) {
   .project-list__item-desc {
     max-width: 30ch;
@@ -323,6 +348,25 @@ article.project-list__item:nth-child(4) > div:nth-child(1) {
   }
 
   .project-list__item.react {
+    margin-top: 0;
+  }
+
+  .about-info {
+    flex-direction: row;
+  }
+
+  .about figure {
+    flex-basis: 33%;
+    align-self: flex-start;
+    margin: 0 2em;
+  }
+
+  .about-info__text {
+    flex-basis: 66%;
+    max-width: 60ch;
+    margin: 0 2em;
+  }
+  .about-info__text p:first-child {
     margin-top: 0;
   }
 }
