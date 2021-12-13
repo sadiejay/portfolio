@@ -6,6 +6,9 @@ Author's custom styles
 // Global Styles
   $primary-font: 'Montserrat', sans-serif;
   $accent-font: 'Aclonica', sans-serif;
+  $black:#0d0d0d;
+  $white:#eff0f3;
+
   h1,
   h2,
   h3,
@@ -109,7 +112,7 @@ h2 {
       border-radius: 5px;
       font-size: 1rem;
       background: transparent;
-      color: #000;
+      color: inherit;
       display: none;
 
       &:focus,
@@ -158,6 +161,7 @@ h2 {
     // border-radius: 50%;
     cursor: pointer;
     background: inherit;
+    color: inherit;
   }
   .theme-toggle i{
       font-size: 1.5rem;
@@ -367,6 +371,7 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
 }
 
 // rest of imports
+@import"./themes";
 @import "./helperclass";
 @import "./mediaqueries";
 @import "./printstyles";

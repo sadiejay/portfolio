@@ -169,7 +169,7 @@ header .menu-btn {
   border-radius: 5px;
   font-size: 1rem;
   background: transparent;
-  color: #000;
+  color: inherit;
   display: none;
 }
 header .menu-btn:focus, header .menu-btn:hover {
@@ -212,6 +212,7 @@ header .menu-nav.is-active {
   padding: 20px;
   cursor: pointer;
   background: inherit;
+  color: inherit;
 }
 
 .theme-toggle i {
@@ -406,6 +407,22 @@ article.project-list__item:nth-child(4) > div:nth-child(1) {
     margin-top: 0;
   }
 }
+body.light {
+  --text: #0d0d0d;
+  --background: #eff0f3;
+}
+
+body.dark {
+  --text: #eff0f3;
+  --background: #0d0d0d;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+  transition: ease 0.5s;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -487,6 +504,11 @@ article.project-list__item:nth-child(4) > div:nth-child(1) {
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
