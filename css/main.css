@@ -295,6 +295,7 @@ i.devicon-sketch-line {
   display: flex;
   flex-flow: row wrap;
   flex: 1;
+  font-variant: small-caps;
 }
 .skills-list li {
   display: inline-flex;
@@ -304,6 +305,12 @@ i.devicon-sketch-line {
 }
 .skills-list li i {
   font-size: 3rem;
+}
+
+li.skills-item:nth-child(6) > p:nth-child(2) {
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 
 .about {

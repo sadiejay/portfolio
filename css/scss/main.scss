@@ -246,6 +246,7 @@ i.devicon-sketch-line {
 display: flex;
 flex-flow: row wrap;
 flex: 1;
+font-variant: small-caps;
 
   li {
     display: inline-flex;
@@ -258,6 +259,10 @@ flex: 1;
     }
   }
 }
+
+li.skills-item:nth-child(6) > p:nth-child(2) {
+  max-width: min-content;
+ }
 
 // about
 .about {
