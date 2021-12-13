@@ -156,6 +156,11 @@ header .menu-btn:focus, header .menu-btn:hover {
 header .menu-nav {
   flex-direction: column;
 }
+header .menu-nav a {
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+}
 header .home {
   min-height: 90vh;
   display: flex;

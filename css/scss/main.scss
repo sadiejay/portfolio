@@ -99,6 +99,9 @@ Author's custom styles
 
     .menu-nav {
       flex-direction: column;
+      a {
+        @include listSetting();
+      }
     }
     .home {
       min-height: 90vh;
