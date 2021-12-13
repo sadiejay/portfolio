@@ -316,6 +316,7 @@ i.devicon-sketch-line {
   .nav {
     min-height: 10vh;
     align-self: flex-end;
+    flex-direction: row;
   }
 
   header .menu-nav {
