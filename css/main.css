@@ -87,16 +87,39 @@ textarea {
 Author's custom styles
 ========================================================================== */
 h1,
-button,
-nav {
-  font-family: "Aclonica", sans-serif;
-}
-
 h2,
 h3,
 h4,
+p,
+button {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+h1,
+h2,
+h3,
+a,
+button,
+nav {
+  font-family: "Aclonica", sans-serif;
+  font-variant: small-caps;
+}
+
+h4,
 p {
   font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-variant: all-petite-caps;
 }
 
 ul li {

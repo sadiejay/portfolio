@@ -6,20 +6,42 @@ Author's custom styles
 // Global Styles
   $primary-font: 'Montserrat', sans-serif;
   $accent-font: 'Aclonica', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  button {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
 
   h1,
+  h2,
+  h3,
+  a,
   button,
   nav {
     font-family:$accent-font;
+    font-variant: small-caps;
   }
 
-  h2,
-  h3,
+  // h2,
+  // h3,
   h4,
   p {
     font-family: $primary-font;
   }
 
+h1 {
+  font-size:2.75rem;
+}
+
+h2 {
+  font-size:2rem;
+  font-variant: all-petite-caps;
+}
 
   ul li {
     list-style-type: none;
