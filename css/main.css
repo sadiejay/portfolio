@@ -101,7 +101,7 @@ p {
 
 ul li {
   list-style-type: none;
-  padding: 1em;
+  padding: 1rem;
 }
 
 body {
@@ -144,7 +144,7 @@ nav,
 header .menu-btn {
   border: 2px solid #fff;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1rem;
   background: transparent;
   color: #000;
   display: none;
@@ -204,21 +204,21 @@ i.devicon-sketch-line {
 }
 
 .project-list__item {
-  margin: 3em 2em;
+  margin: 3rem 2rem;
 }
 
 .project-list__item-info {
-  margin: 2em 0em;
+  margin: 2rem 0rem;
   width: 100%;
   flex-basis: 50%;
-  padding: 2em;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .project-list__item-info > * {
-  margin: 1.5em 0em;
+  margin: 1.5rem 0rem;
 }
 
 .projects-list .react img,
@@ -284,7 +284,7 @@ i.devicon-sketch-line {
 }
 
 .about {
-  margin: 3em 2em;
+  margin: 3rem 2rem;
 }
 
 .about-info {
@@ -364,13 +364,13 @@ article.project-list__item:nth-child(4) > div:nth-child(1) {
   .about figure {
     flex-basis: 33%;
     align-self: flex-start;
-    margin: 0 2em;
+    margin: 0 2rem;
   }
 
   .about-info__text {
     flex-basis: 66%;
     max-width: 60ch;
-    margin: 0 2em;
+    margin: 0 2rem;
   }
   .about-info__text p:first-child {
     margin-top: 0;

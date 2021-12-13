@@ -23,7 +23,7 @@ Author's custom styles
 
   ul li {
     list-style-type: none;
-    padding: 1em;
+    padding: 1rem;
   }
 
   // basic layout
@@ -80,12 +80,12 @@ Author's custom styles
   header {
     .menu-btn {
       // position: absolute;
-      // right: 1em;
-      // top: 0.8em;
+      // right: 1rem;
+      // top: 0.8rem;
       // padding: 8px;
       border: 2px solid #fff;
       border-radius: 5px;
-      font-size: 1em;
+      font-size: 1rem;
       background: transparent;
       color: #000;
       display: none;
@@ -156,20 +156,20 @@ i.devicon-sketch-line {
 }
 
 .project-list__item {
-  margin: 3em 2em;
+  margin: 3rem 2rem;
 }
 
 
 .project-list__item-info {
-  margin: 2em 0em;
+  margin: 2rem 0rem;
   width: 100%;
   // border: blue solid 1px;
   flex-basis: 50%;
-  padding: 2em;
+  padding: 2rem;
   @include flexCenter();
 
   > * {
-    margin: 1.5em 0em;
+    margin: 1.5rem 0rem;
   }
 }
 
@@ -218,7 +218,7 @@ i.devicon-sketch-line {
 
 // skills
 .skills {
-  // margin: 3em 2em;
+  // margin: 3rem 2rem;
 }
 .skills-list {
 display: flex;
@@ -239,7 +239,7 @@ flex: 1;
 
 // about
 .about {
-  margin: 3em 2em;
+  margin: 3rem 2rem;
 }
 .about-info {
   width: fit-content;
@@ -325,13 +325,13 @@ flex: 1;
   .about figure {
     flex-basis: 33%;
     align-self: flex-start;
-    margin: 0 2em;
+    margin: 0 2rem;
   }
 
   .about-info__text {
     flex-basis: 66%;
     max-width: 60ch;
-    margin: 0 2em;
+    margin: 0 2rem;
     p:first-child {
       margin-top: 0;
     }
