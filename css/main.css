@@ -293,6 +293,7 @@ i.devicon-sketch-line {
 }
 
 .skills-list {
+  margin: 3rem 0;
   display: flex;
   flex-flow: row wrap;
   flex: 1;
@@ -319,6 +320,7 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
 }
 
 .about-info {
+  margin: 3rem 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -336,6 +338,10 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
 .about p {
   margin: 25px 0;
   text-align: left;
+}
+
+.form {
+  margin: 3rem 0;
 }
 
 @media only screen and (min-width: 530px) {
