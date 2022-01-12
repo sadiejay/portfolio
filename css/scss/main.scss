@@ -8,6 +8,7 @@ Author's custom styles
   $accent-font: 'Aclonica', sans-serif;
   $black:#0d0d0d;
   $white:#eff0f3;
+  $outline: lawngreen;
 
   h1,
   h2,
@@ -37,21 +38,25 @@ Author's custom styles
     font-family: $primary-font;
   }
 
-h1 {
-  font-size:2.75rem;
-}
+  h1 {
+    font-size:2.75rem;
+    :first-child{
+      border-bottom: 3px $outline solid;
+    }
+  }
 
-h2 {
-  font-size:2rem;
-  font-variant: all-petite-caps;
-}
+  h2 {
+    font-size:2rem;
+    font-variant: all-petite-caps;
+    border-bottom: 3px darken($outline, 15%) solid;
+  }
 
   ul li {
     list-style-type: none;
     padding: 1rem;
   }
 
-  // basic layout
+// basic layout
   @mixin flexCenter {
     display: flex;
     flex-direction: column;
@@ -73,7 +78,7 @@ h2 {
     width: 100%;
     min-height: 100%;
     margin: auto;
-    border: lawngreen 7px solid;
+    border: $outline 5px solid;
     // ! change to animated (?) gradient
 
     * {
@@ -102,6 +107,7 @@ h2 {
     margin: auto;
   }
 
+// header
   header {
     .menu-btn {
       // position: absolute;
@@ -174,7 +180,6 @@ h2 {
   header i {
     // margin-bottom: 25px;
   }
-  //  header
 
 // project
 i.devicon-sketch-line {

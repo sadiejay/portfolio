@@ -116,10 +116,14 @@ p {
 h1 {
   font-size: 2.75rem;
 }
+h1 :first-child {
+  border-bottom: 3px lawngreen solid;
+}
 
 h2 {
   font-size: 2rem;
   font-variant: all-petite-caps;
+  border-bottom: 3px #56b000 solid;
 }
 
 ul li {
@@ -135,7 +139,7 @@ body {
   width: 100%;
   min-height: 100%;
   margin: auto;
-  border: lawngreen 7px solid;
+  border: lawngreen 5px solid;
 }
 .container * {
   text-align: center;
