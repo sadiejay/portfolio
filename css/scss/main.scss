@@ -154,6 +154,20 @@ Author's custom styles
       flex-direction: column;
       a {
         @include listSetting();
+        padding: 0.25em 0.75em;
+        min-width: 10ch;
+        min-height: 44px;
+        transition: 220ms all ease-in-out;
+        &:hover,
+        &:active {
+          color: scale-color($outline, $lightness: -20%);
+          border-bottom: scale-color($outline, $lightness: -20%) solid 2px;
+        }
+        &:focus {
+          outline-style: solid;
+          outline-color: transparent;
+          box-shadow: 0 0 0 2px scale-color($outline, $lightness: -40%);
+        }
       }
     }
     .home {

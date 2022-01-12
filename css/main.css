@@ -215,6 +215,19 @@ header .menu-nav a {
   text-decoration: none;
   list-style-type: none;
   color: inherit;
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  transition: 220ms all ease-in-out;
+}
+header .menu-nav a:hover, header .menu-nav a:active {
+  color: #63ca00;
+  border-bottom: #63ca00 solid 2px;
+}
+header .menu-nav a:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 2px #4a9700;
 }
 header .home {
   min-height: 90vh;
