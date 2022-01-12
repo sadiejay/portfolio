@@ -293,6 +293,10 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
 }
 
 // contact
+.contact {
+  margin: 3rem 2rem;
+}
+
 .contact .wrapper {
   @include flexCenter();
 }
@@ -307,6 +311,26 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
   i {
     font-size: 2rem;
   }
+}
+
+.form input {
+  max-height: 40px;
+  margin-bottom: 15px;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  min-width:100%;
+  padding: 10px;
+}
+
+.form-inputs :focus-visible {
+  text-align: left;
+}
+
+.form button {
+  margin-top: 10px;
 }
   .form-text__sm-list {
     display: flex;
@@ -389,6 +413,26 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
     p:first-child {
       margin-top: 0;
     }
+  }
+
+  // contact
+  .form {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .form-inputs,
+  .form-text {
+    flex-basis: 50%;
+  }
+
+  .form-text p,
+  .form-inputs ::placeholder {
+    text-align: left;
+  }
+
+  .form-text {
+    margin-left: 30px;
   }
 
 }
