@@ -344,6 +344,11 @@ i.devicon-sketch-line {
 }
 .skills-list li i {
   font-size: 3rem;
+  transition: 220ms all ease-in-out;
+}
+.skills-list li i:hover {
+  color: lawngreen;
+  transform: scale(1.1);
 }
 
 li.skills-item:nth-child(6) > p:nth-child(2) {
@@ -425,6 +430,20 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
 .form-text__sm-list {
   display: flex;
   justify-content: center;
+}
+
+.form-text__sm-link i {
+  font-size: 2.5rem;
+  transition: 220ms all ease-in-out;
+}
+.form-text__sm-link i:hover, .form-text__sm-link i:active {
+  color: lawngreen;
+  transform: scale(1.1);
+}
+.form-text__sm-link i:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 2px #4a9700;
 }
 
 @media only screen and (min-width: 530px) {

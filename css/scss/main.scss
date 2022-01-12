@@ -299,6 +299,11 @@ font-variant: small-caps;
 
     i {
       font-size: 3rem;
+      transition: 220ms all ease-in-out;
+      &:hover {
+        color: $outline;
+        transform: scale(1.1);
+      }
     }
   }
 }
@@ -374,6 +379,21 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
     display: flex;
     justify-content: center;
   }
+
+.form-text__sm-link i {
+  font-size: 2.5rem;
+  transition: 220ms all ease-in-out;
+  &:hover,
+  &:active {
+    color: $outline;
+    transform: scale(1.1);
+  }
+  &:focus {
+    outline-style: solid;
+    outline-color: transparent;
+    box-shadow: 0 0 0 2px scale-color($outline, $lightness: -40%);
+  }
+}
 
 @media only screen and (min-width: 530px) {
   // header
