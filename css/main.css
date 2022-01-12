@@ -168,17 +168,45 @@ nav,
   margin: auto;
 }
 
+button.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+button.btn,
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  text-align: center;
+  line-height: 1.1;
+  transition: 220ms all ease-in-out;
+}
+button.btn:hover, button.btn:active,
+a.btn:hover,
+a.btn:active {
+  color: #63ca00;
+  border: #63ca00 solid 2px;
+}
+button.btn:focus,
+a.btn:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 2px #4a9700;
+}
+
 header .menu-btn {
-  border: 2px solid #fff;
-  border-radius: 5px;
   font-size: 1rem;
-  background: transparent;
   color: inherit;
   display: none;
-}
-header .menu-btn:focus, header .menu-btn:hover {
-  background: #fff;
-  color: #000;
+  box-shadow: none;
 }
 header .menu-nav {
   flex-direction: column;
@@ -282,18 +310,9 @@ i.devicon-sketch-line {
 }
 
 .project-list__item-links a {
-  display: inline-block;
-  padding: 25px;
-  margin: 10px;
-  outline: 1px solid olive;
   text-decoration: none;
   list-style-type: none;
   color: inherit;
-}
-
-.project-list__item-links a:hover {
-  color: peru;
-  outline: dashed 1px black;
 }
 
 .skills-list {
@@ -506,6 +525,15 @@ body {
   transition: ease 0.5s;
 }
 
+button.btn,
+a.btn {
+  border: 2px var(--text) solid;
+}
+
+button.menu-btn {
+  border: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -595,6 +623,11 @@ body {
 @media (prefers-reduced-motion: reduce) {
   body {
     transition: none;
+  }
+}
+@media screen and (-ms-high-contrast: active) {
+  button.btn {
+    border: 2px solid currentcolor;
   }
 }
 @media only screen and (min-width: 35em) {

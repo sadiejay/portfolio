@@ -107,25 +107,47 @@ Author's custom styles
     margin: auto;
   }
 
+  button.btn{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  button.btn,
+  a.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    // border: 2px inherit solid;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+    padding: 0.25em 0.75em;
+    min-width: 10ch;
+    min-height: 44px;
+    text-align: center;
+    line-height: 1.1;
+    transition: 220ms all ease-in-out;
+    &:hover,
+    &:active {
+      color: scale-color($outline, $lightness: -20%);
+      border: scale-color($outline, $lightness: -20%) solid 2px;
+    }
+    &:focus {
+      outline-style: solid;
+      outline-color: transparent;
+      box-shadow: 0 0 0 2px scale-color($outline, $lightness: -40%);
+    }
+
+  }
+
 // header
   header {
     .menu-btn {
-      // position: absolute;
-      // right: 1rem;
-      // top: 0.8rem;
-      // padding: 8px;
-      border: 2px solid #fff;
-      border-radius: 5px;
       font-size: 1rem;
-      background: transparent;
       color: inherit;
       display: none;
-
-      &:focus,
-      &:hover {
-        background: #fff;
-        color: #000;
-      }
+      box-shadow: none;
     }
 
     .menu-nav {
@@ -234,17 +256,17 @@ i.devicon-sketch-line {
 }
 
 .project-list__item-links a {
-  display: inline-block;
-  padding: 25px;
-  margin: 10px;
-  outline: 1px solid olive;
+  // display: inline-block;
+  // padding: 25px;
+  // margin: 10px;
+  // outline: 1px solid olive;
   @include listSetting ();
 
 }
 
 .project-list__item-links a:hover {
-  color: peru;
-  outline:dashed 1px black
+  // color: peru;
+  // outline:dashed 1px black
 }
 
 // skills
