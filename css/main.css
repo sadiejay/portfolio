@@ -491,102 +491,6 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
   box-shadow: 0 0 0 2px #4a9700;
 }
 
-@media only screen and (min-width: 530px) {
-  .project-list__item-desc {
-    max-width: 30ch;
-    text-align: left;
-  }
-
-  .skills-list li {
-    flex-basis: 25%;
-  }
-}
-@media only screen and (min-width: 760px) {
-  .nav {
-    min-height: 10vh;
-    align-self: flex-end;
-    flex-direction: row;
-  }
-
-  header .menu-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-  }
-
-  header #toggle {
-    display: none;
-  }
-
-  article.project-list__item:nth-child(1) > div:nth-child(1),
-article.project-list__item:nth-child(3) > div:nth-child(1) {
-    flex-direction: row;
-  }
-
-  article.project-list__item:nth-child(2) > div:nth-child(1),
-article.project-list__item:nth-child(4) > div:nth-child(1) {
-    flex-direction: row-reverse;
-  }
-
-  .projects-list .react img,
-.projects-list .unplugged img,
-.projects-list .base-apparel img,
-.projects-list .halloween img {
-    max-width: 50%;
-    flex-basis: 50%;
-  }
-
-  .project-list__item.react {
-    margin-top: 0;
-  }
-
-  .about-info {
-    flex-direction: row;
-  }
-
-  .about figure {
-    flex-basis: 33%;
-    align-self: flex-start;
-    margin: 0 2rem;
-  }
-
-  .about-info__text {
-    flex-basis: 66%;
-    max-width: 60ch;
-    margin: 0 2rem;
-  }
-  .about-info__text p:first-child {
-    margin-top: 0;
-  }
-
-  .form {
-    flex-direction: row-reverse;
-    align-items: flex-start;
-  }
-
-  .form-inputs,
-.form-text {
-    flex-basis: 50%;
-  }
-
-  .form-inputs ::-moz-placeholder {
-    text-align: left;
-  }
-
-  .form-inputs :-ms-input-placeholder {
-    text-align: left;
-  }
-
-  .form-text p,
-.form-inputs ::placeholder {
-    text-align: left;
-  }
-
-  .form-text {
-    margin-left: 30px;
-  }
-}
 body.light {
   --text: #0d0d0d;
   --background: #eff0f3;
@@ -716,8 +620,101 @@ a:visited {
     border: 2px solid currentcolor;
   }
 }
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 530px) {
+  .project-list__item-desc {
+    max-width: 30ch;
+    text-align: left;
+  }
+
+  .skills-list li {
+    flex-basis: 25%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .nav {
+    min-height: 10vh;
+    align-self: flex-end;
+    flex-direction: row;
+  }
+
+  header .menu-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  header #toggle {
+    display: none;
+  }
+
+  article.project-list__item:nth-child(1) > div:nth-child(1),
+article.project-list__item:nth-child(3) > div:nth-child(1) {
+    flex-direction: row;
+  }
+
+  article.project-list__item:nth-child(2) > div:nth-child(1),
+article.project-list__item:nth-child(4) > div:nth-child(1) {
+    flex-direction: row-reverse;
+  }
+
+  .projects-list .react img,
+.projects-list .unplugged img,
+.projects-list .base-apparel img,
+.projects-list .halloween img {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .project-list__item.react {
+    margin-top: 0;
+  }
+
+  .about-info {
+    flex-direction: row;
+  }
+
+  .about figure {
+    flex-basis: 33%;
+    align-self: flex-start;
+    margin: 0 2rem;
+  }
+
+  .about-info__text {
+    flex-basis: 66%;
+    max-width: 60ch;
+    margin: 0 2rem;
+  }
+  .about-info__text p:first-child {
+    margin-top: 0;
+  }
+
+  .form {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .form-inputs,
+.form-text {
+    flex-basis: 50%;
+  }
+
+  .form-inputs ::-moz-placeholder {
+    text-align: left;
+  }
+
+  .form-inputs :-ms-input-placeholder {
+    text-align: left;
+  }
+
+  .form-text p,
+.form-inputs ::placeholder {
+    text-align: left;
+  }
+
+  .form-text {
+    margin-left: 30px;
+  }
 }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
