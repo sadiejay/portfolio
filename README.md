@@ -149,6 +149,12 @@ html {
 
 - [How To- Smooth Scroll](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2) - Was expecting to need a script but there's a css rule for this! Wow!
 
+- [How to create the right meta description](https://yoast.com/meta-descriptions/#characteristics) - I read this and took the advice seriously.
+
+- [Open Graph Meta Tags: Everything You Need to Know](https://ahrefs.com/blog/open-graph-meta-tags/) - I wasn't aware what the og meta property was, so I read up on how to handle the tags (as opposed to just deleting them).
+
+- [How to use an emoji as a favicon](https://benborgers.com/posts/emoji-favicon) - This open source [EmojiCDN](https://github.com/benborgers/emojicdn) really saved me. I wasn't feeling like creating an svg or png of a emoji. Came across this CDN and, promise fulfilled — super useful!
+
 ## Author
 
 - Website - [Sadie Jay Portfolio](https://sadiejay.github.io/portfolio/)
