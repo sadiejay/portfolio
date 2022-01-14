@@ -27,8 +27,11 @@ Users should be able to:
 - Get an idea of Sadie Jay's skills
 
 ### Screenshot
+#### Dark Mode
+![Dark Mode Screenshot](https://user-images.githubusercontent.com/19538219/149443852-627a7629-1632-4d78-90e7-630c0f6659c4.png)
+#### Light Mode
+![Light Mode](https://user-images.githubusercontent.com/19538219/149443869-0e2dc95c-479d-47f7-a248-e5a91636119c.png)
 
-![](./screenshot.jpg)
 
 ### Links
 
