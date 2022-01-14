@@ -493,7 +493,7 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
 
 body.light {
   --text: #0d0d0d;
-  --background: #eff0f3;
+  --background: #fafafa;
 }
 
 body.dark {
