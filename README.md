@@ -152,6 +152,8 @@ html {
 
 - [How To- Smooth Scroll](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2) - Was expecting to need a script but there's a css rule for this! Wow!
 
+- [Scroll Down Arrow With Bounce Animation](https://codemyui.com/scroll-arrow-bounce-animation/) - This was the base for my scroll down arrow animation.
+
 - [How to create the right meta description](https://yoast.com/meta-descriptions/#characteristics) - I read this and took the advice seriously.
 
 - [Open Graph Meta Tags: Everything You Need to Know](https://ahrefs.com/blog/open-graph-meta-tags/) - I wasn't aware what the og meta property was, so I read up on how to handle the tags (as opposed to just deleting them).
