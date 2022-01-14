@@ -270,6 +270,49 @@ header .menu-nav.is-active {
   text-align: left;
 }
 
+.down-arrow-link {
+  min-width: 10ch;
+  min-height: 44px;
+  transition: 220ms all ease-in-out;
+}
+.down-arrow-link:hover, .down-arrow-link:active {
+  color: lawngreen;
+  transform: scale(1.1);
+}
+
+header i {
+  text-align: center;
+  font-size: 2rem;
+}
+
+header .bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 i.devicon-sketch-line {
   font-weight: bolder;
 }
@@ -566,6 +609,10 @@ a.btn {
 
 button.menu-btn {
   border: none;
+}
+
+a:visited {
+  color: var(--text);
 }
 
 /* ==========================================================================
