@@ -109,6 +109,7 @@ html {
 
 - I'm going to change out the simple screenshots with the fancy mask of a laptop haha but this will get me going.
 - I want to use a mix of mixins and `themeing ()` to make more granular light/dark theme changes, but conceptualizing the (possible) connection of the scss and js is beyond this version.
+- The h1 is going to incorporate some sort of animation as well, just like from my main inspiration site listed below!
 
 ### Useful resources
 
