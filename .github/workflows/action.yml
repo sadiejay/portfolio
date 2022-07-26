@@ -7,13 +7,13 @@ on:
 
 jobs:
   build:
-    name: Build the page with last updated time
+    name: Build the page and deploy with github pages
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3.0.2
-      - name: Update the page
+      - name: Install packages and build the page
         run: |
           npm ci
           npm run build
