@@ -10,6 +10,7 @@ One page responsive portfolio site. Build with HTML, CSS, SCSS, JS
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+    - [Building a local version](#building-a-local-version)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
@@ -68,6 +69,12 @@ Users should be able to:
 - Animations really do liven up the site a bit. I figured out how to make that static arrow a boucing scroll down. I'm also liking the look of the `margin-top: 20vh` on the h2. Give each section a space to breathe and when the site links are clicked there's space on the top of the screen.
   - Also, when did `scroll-behavior: smooth;` become a thing??
 
+**UPDATE: 26 Jul 2022**
+- Paired with [Jörn](Narigo) Ran the scripts in the package.json file that were there from the HTML5 template. I didn't even remember they exsisted hahah
+- Added the package-lock.json updates to the project from the `npm install`
+- Added an action that will build the project from any branch and deploy tot gh-pages thus allowing to have changes hosted without having to manually push to gh-pages
+- Create a CNAME file in the `dist` to redirect the from `sadiejay.github.io` to my new custom domain using
+`echo "www.sadiejay.online" > dist/CNAME`
 
 ### Built with
 
@@ -78,6 +85,21 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - JS
+- Github actions
+
+
+---
+#### Building a local version
+To build the project locally:
+```sh
+npm install
+npm start
+```
+
+To run the dev environment:
+```sh
+npm run dev
+```
 
 
 ### What I learned
@@ -104,7 +126,23 @@ html {
     }
 ```
 
+**UPDATE: 26 JUL 2022**
+- I learned a ton!! Made a github action that'll run scripts and update the site, without having to rely on jekyll!!
+- Learned that the [HTML5 boilerplate](https://github.com/h5bp/html5-boilerplate) is super useful! haha
+- Learned `dig insert-url-here` will show when the url will get refreshed again in the amount of secions. so right now I see in the `ANSWER SECTION`:
+```sh
+www.sadiejay.online. 3600 in CNAME sadiejay.github.io.
+sadiejay.online. 3600 in A some-IP-address
+sadiejay.online. 3600 in A some-IP-address
+sadiejay.online. 3600 in A some-IP-address
+sadiejay.online. 3600 in A some-IP-address
+```
 
+before it would read
+```sh
+www.sadiejay.online. 1260 in CNAME sadiejay.online.
+sadiejay.online. 389 in A some-IP-address
+```
 ### Continued development
 
 - I'm going to change out the simple screenshots with the fancy mask of a laptop haha but this will get me going.
