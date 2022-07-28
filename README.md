@@ -112,7 +112,7 @@ npm run dev
 - Added the package-lock.json updates to the project from the `npm install`
 - Added an action that will build the project from any branch and deploy tot gh-pages thus allowing to have changes hosted without having to manually push to gh-pages
 - Create a CNAME file in the `dist` to redirect the from `sadiejay.github.io` to my new custom domain using
-`echo "www.sadiejay.online" > dist/CNAME`
+`echo "www.sadiejay.codes" > dist/CNAME`
 
 <br>
 <br>
@@ -160,17 +160,17 @@ html {
 - Learned that the [HTML5 boilerplate](https://github.com/h5bp/html5-boilerplate) is super useful! haha
 - Learned `dig insert-url-here` will show when the url will get refreshed again in the amount of secions. so right now I see in the `ANSWER SECTION`:
 ```sh
-www.sadiejay.online. 3600 in CNAME sadiejay.github.io.
-sadiejay.online. 3600 in A some-IP-address
-sadiejay.online. 3600 in A some-IP-address
-sadiejay.online. 3600 in A some-IP-address
-sadiejay.online. 3600 in A some-IP-address
+www.sadiejay.codes. 3600 in CNAME sadiejay.github.io.
+sadiejay.codes. 3600 in A some-IP-address
+sadiejay.codes. 3600 in A some-IP-address
+sadiejay.codes. 3600 in A some-IP-address
+sadiejay.codes. 3600 in A some-IP-address
 ```
 
 before it would read
 ```sh
-www.sadiejay.online. 1260 in CNAME sadiejay.online.
-sadiejay.online. 389 in A some-IP-address
+www.sadiejay.codes. 1260 in CNAME sadiejay.codes.
+sadiejay.codes. 389 in A some-IP-address
 ```
 
 <br>
