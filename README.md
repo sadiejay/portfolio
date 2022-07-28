@@ -2,23 +2,33 @@
 
 One page responsive portfolio site. Build with HTML, CSS, SCSS, JS
 
+<br>
+
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Building a local version](#building-a-local-version)
 - [My process](#my-process)
   - [Built with](#built-with)
-    - [Building a local version](#building-a-local-version)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+<br>
+
+---
+
+<br>
+<br>
 
 ## Overview
+
+<br>
 
 ### The challenge
 
@@ -29,17 +39,45 @@ Users should be able to:
 - Set dark / light theme preference or have device settings detect theme preference.
 - Interact with animated elements and states or have device settings disable them.
 
+<br>
+<br>
+
 ### Screenshot
 #### Dark Mode
 ![Dark Mode Screenshot](https://user-images.githubusercontent.com/19538219/149443852-627a7629-1632-4d78-90e7-630c0f6659c4.png)
+<br>
+<br>
+
 #### Light Mode
 ![Light Mode](https://user-images.githubusercontent.com/19538219/149443869-0e2dc95c-479d-47f7-a248-e5a91636119c.png)
 
+<br>
+<br>
 
 ### Links
 
-- Source Code URL: [Source Code URL](https://github.com/sadiejay/portfolio)
-- Live Site URL: [Live site here](https://sadiejay.github.io/portfolio/)
+- Source Code URL: [Github: sadiejay/profolio](https://github.com/sadiejay/portfolio)
+- Live Site URL: [sadiejay.codes](https://sadiejay.codes/)
+
+<br>
+<br>
+
+### Building a local version
+To build the project locally:
+```sh
+npm install
+npm start
+```
+
+To run the dev environment:
+```sh
+npm run dev
+```
+
+---
+
+<br>
+<br>
 
 ## My process
 
@@ -76,6 +114,9 @@ Users should be able to:
 - Create a CNAME file in the `dist` to redirect the from `sadiejay.github.io` to my new custom domain using
 `echo "www.sadiejay.online" > dist/CNAME`
 
+<br>
+<br>
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -88,22 +129,10 @@ Users should be able to:
 - Github actions
 
 
----
-#### Building a local version
-To build the project locally:
-```sh
-npm install
-npm start
-```
-
-To run the dev environment:
-```sh
-npm run dev
-```
-
+<br>
+<br>
 
 ### What I learned
-
 
 I mentioned in my [Halloween Word Guess](https://github.com/sadiejay/halloween-word-guess#continued-development) project's README that I wanted to honor reduced motion settings, and I think I've got it right with this one, so I'm pretty happy about that.
 
@@ -143,11 +172,19 @@ before it would read
 www.sadiejay.online. 1260 in CNAME sadiejay.online.
 sadiejay.online. 389 in A some-IP-address
 ```
+
+<br>
+<br>
+
 ### Continued development
 
 - I'm going to change out the simple screenshots with the fancy mask of a laptop haha but this will get me going.
 - I want to use a mix of mixins and `themeing ()` to make more granular light/dark theme changes, but conceptualizing the (possible) connection of the scss and js is beyond this version.
 - The h1 is going to incorporate some sort of animation as well, just like from my main inspiration site listed below!
+
+
+<br>
+<br>
 
 ### Useful resources
 
@@ -201,13 +238,20 @@ sadiejay.online. 389 in A some-IP-address
 
 - [How to use an emoji as a favicon](https://benborgers.com/posts/emoji-favicon) - This open source [EmojiCDN](https://github.com/benborgers/emojicdn) really saved me. I wasn't feeling like creating an svg or png of a emoji. Came across this CDN and, promise fulfilled — super useful!
 
+<br>
+<br>
+
 ## Author
 
 - Website - [Sadie Jay Portfolio](https://sadiejay.github.io/portfolio/)
 - Dev.to - [@sadiejay](https://dev.to/sadiejay/)
 
 
+<br>
+<br>
+
 ## Acknowledgments
 
+- Thank you Jörn and Joe for yall's pairing!
 - Thank you to all my inspo developers for putting thier work out there.
 - Thank you for the Skillcrush community for thier support!
