@@ -19,7 +19,7 @@ jobs:
           npm run build
       - name: Create CNAME
         run: |
-          echo "www.sadiejay.online" > dist/CNAME
+          echo "www.sadiejay.codes" > dist/CNAME
       - name: Deploy to GitHub pages branch
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
