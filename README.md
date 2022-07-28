@@ -57,7 +57,7 @@ Users should be able to:
 ### Links
 
 - Source Code URL: [Github: sadiejay/profolio](https://github.com/sadiejay/portfolio)
-- Live Site URL: [sadiejay.codes](https://sadiejay.codes/)
+- Live Site URL: [www.sadiejay.codes](https://www.sadiejay.codes/)
 
 <br>
 <br>
