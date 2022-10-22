@@ -107,6 +107,7 @@ button,
 nav {
   font-family: "Aclonica", sans-serif;
   font-variant: small-caps;
+  letter-spacing: 0.07rem;
 }
 
 h4,
@@ -275,6 +276,8 @@ header .menu-nav.is-active {
   min-width: 10ch;
   min-height: 44px;
   transition: 220ms all ease-in-out;
+  position: relative;
+  top: -70px;
 }
 .down-arrow-link:hover, .down-arrow-link:active {
   color: lawngreen;
@@ -338,7 +341,7 @@ i.devicon-sketch-line {
 
 .projects-list .react img,
 .projects-list .unplugged img,
-.projects-list .base-apparel img,
+.projects-list .statventures img,
 .projects-list .halloween img {
   width: 100%;
 }
@@ -351,8 +354,8 @@ i.devicon-sketch-line {
   aspect-ratio: 319/181;
 }
 
-.projects-list .base-apparel img {
-  aspect-ratio: 128/69;
+.projects-list .statventures img {
+  aspect-ratio: 1920/995;
 }
 
 .projects-list .halloween img {
@@ -614,7 +617,6 @@ a:visited {
   html {
     scroll-behavior: auto;
   }
-
   body {
     transition: none;
   }
@@ -629,7 +631,6 @@ a:visited {
     max-width: 30ch;
     text-align: left;
   }
-
   .skills-list li {
     flex-basis: 25%;
   }
@@ -640,50 +641,41 @@ a:visited {
     align-self: flex-end;
     flex-direction: row;
   }
-
   header .menu-nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
   }
-
   header #toggle {
     display: none;
   }
-
   article.project-list__item:nth-child(1) > div:nth-child(1),
 article.project-list__item:nth-child(3) > div:nth-child(1) {
     flex-direction: row;
   }
-
   article.project-list__item:nth-child(2) > div:nth-child(1),
 article.project-list__item:nth-child(4) > div:nth-child(1) {
     flex-direction: row-reverse;
   }
-
   .projects-list .react img,
 .projects-list .unplugged img,
-.projects-list .base-apparel img,
+.projects-list .statventures img,
 .projects-list .halloween img {
-    max-width: 50%;
-    flex-basis: 50%;
+    max-width: 75%;
+    flex-basis: 75%;
   }
-
   .project-list__item.react {
     margin-top: 0;
   }
-
   .about-info {
     flex-direction: row;
   }
-
   .about figure {
     flex-basis: 33%;
     align-self: flex-start;
     margin: 0 2rem;
   }
-
   .about-info__text {
     flex-basis: 66%;
     max-width: 60ch;
@@ -692,30 +684,24 @@ article.project-list__item:nth-child(4) > div:nth-child(1) {
   .about-info__text p:first-child {
     margin-top: 0;
   }
-
   .form {
     flex-direction: row-reverse;
     align-items: flex-start;
   }
-
   .form-inputs,
 .form-text {
     flex-basis: 50%;
   }
-
   .form-inputs ::-moz-placeholder {
     text-align: left;
   }
-
   .form-inputs :-ms-input-placeholder {
     text-align: left;
   }
-
   .form-text p,
 .form-inputs ::placeholder {
     text-align: left;
   }
-
   .form-text {
     margin-left: 30px;
   }
@@ -738,20 +724,16 @@ article.project-list__item:nth-child(4) > div:nth-child(1) {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
   a,
 a:visited {
     text-decoration: underline;
   }
-
   a[href]::after {
     content: " (" attr(href) ")";
   }
-
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
-
   /*
     Don't show links that are fragment identifiers,
     or use the `javascript:` pseudo protocol
@@ -760,17 +742,14 @@ a:visited {
 a[href^="javascript:"]::after {
     content: "";
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
   pre,
 blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-
   /*
     Printing Tables:
     https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -778,19 +757,16 @@ blockquote {
   thead {
     display: table-header-group;
   }
-
   tr,
 img {
     page-break-inside: avoid;
   }
-
   p,
 h2,
 h3 {
     orphans: 3;
     widows: 3;
   }
-
   h2,
 h3 {
     page-break-after: avoid;
