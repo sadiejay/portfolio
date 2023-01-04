@@ -61,6 +61,11 @@ ul li {
 }
 
 // basic layout
+::selection {
+  background-color: $outline;
+  color: $black;
+}
+
 @mixin flexCenter {
   display: flex;
   flex-direction: column;
