@@ -479,6 +479,8 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
 
 .form-inputs :focus-visible {
   text-align: left;
+  outline: solid 2px #4a9700;
+  border-color: transparent;
 }
 
 .form button {
