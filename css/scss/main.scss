@@ -426,6 +426,10 @@ li.skills-item:nth-child(6)>p:nth-child(2) {
   display: block;
   min-width: 100%;
   padding: 10px;
+
+  :focus{
+    border-color: none;
+  }
 }
 
 .form-inputs :focus-visible {

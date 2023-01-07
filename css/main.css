@@ -206,6 +206,8 @@ a.btn:focus {
   outline-style: solid;
   outline-color: transparent;
   box-shadow: 0 0 0 2px #4a9700;
+  border: 2px solid var(--background);
+  color: #4a9700;
 }
 
 header .menu-btn {
@@ -234,6 +236,8 @@ header .menu-nav a:focus {
   outline-style: solid;
   outline-color: transparent;
   box-shadow: 0 0 0 2px #4a9700;
+  border: 2px solid var(--background);
+  color: #4a9700;
 }
 header .home {
   min-height: 90vh;
@@ -467,6 +471,10 @@ li.skills-item:nth-child(6) > p:nth-child(2) {
   display: block;
   min-width: 100%;
   padding: 10px;
+}
+.form input :focus,
+.form textarea :focus {
+  border-color: none;
 }
 
 .form-inputs :focus-visible {
