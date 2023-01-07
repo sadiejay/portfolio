@@ -706,13 +706,16 @@ article.project-list__item:nth-child(4) > div:nth-child(1) {
   }
   .form-inputs ::-moz-placeholder {
     text-align: left;
+    font-family: "Montserrat", sans-serif;
   }
   .form-inputs :-ms-input-placeholder {
     text-align: left;
+    font-family: "Montserrat", sans-serif;
   }
   .form-text p,
 .form-inputs ::placeholder {
     text-align: left;
+    font-family: "Montserrat", sans-serif;
   }
   .form-text {
     margin-left: 30px;
