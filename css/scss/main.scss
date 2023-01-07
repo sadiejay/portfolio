@@ -143,6 +143,8 @@ a.btn {
     outline-style: solid;
     outline-color: transparent;
     box-shadow: 0 0 0 2px scale-color($outline, $lightness: -40%);
+    border: 2px solid var(--background);
+    color: scale-color($outline, $lightness: -40%);
   }
 
 }
@@ -176,6 +178,8 @@ header {
         outline-style: solid;
         outline-color: transparent;
         box-shadow: 0 0 0 2px scale-color($outline, $lightness: -40%);
+        border: 2px solid var(--background);
+        color: scale-color($outline, $lightness: -40%);
       }
     }
   }
