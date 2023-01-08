@@ -238,6 +238,8 @@ sadiejay.codes. 389 in A some-IP-address
 
 - [How to use an emoji as a favicon](https://benborgers.com/posts/emoji-favicon) - This open source [EmojiCDN](https://github.com/benborgers/emojicdn) really saved me. I wasn't feeling like creating an svg or png of a emoji. Came across this CDN and, promise fulfilled — super useful!
 
+- [Create better, accessible focus effects](https://uxdesign.cc/create-better-accessible-focus-effects-75a3de27b8ba) — Making some accessiblitiy updates and this was a super helpful for how to style `:focus` pseudo-class.
+
 <br>
 <br>
 
