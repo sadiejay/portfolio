@@ -36,8 +36,9 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - Get an idea of Sadie Jay's skills and background
-- Set dark / light theme preference or have device settings detect theme preference.
-- Interact with animated elements and states or have device settings disable them.
+- Set dark / light theme preference or have device settings detect theme preference
+- Interact with animated elements and states or have device settings disable them
+- Navigate site via keyboard-only
 
 <br>
 <br>
